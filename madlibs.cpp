@@ -5,7 +5,6 @@ using namespace std;
 int main() {
     // Note that `#include <string>` is required for using the string type.
 
-    // TODO (1): declare string variables here
     string location;
     string verb;
     string anotherVerb;
@@ -14,7 +13,6 @@ int main() {
     string noun;
     string relative;
 
-    // TODO (2): print game title here
     cout << "** MADLIBS **" << endl;
 
     // Ask user for input -- but not in the order of the story...
@@ -41,7 +39,6 @@ int main() {
     getline(cin, relative);
 
     // Output a blank line
-    // TODO (4): output a blank line here
 
     cout << endl;
     cout << endl;
@@ -49,7 +46,6 @@ int main() {
     // Output the story
     //   My ADJECTIVE RELATIVE is convinced that if I VERB ADVERB,
     //   I will be able to VERB the NOUN in LOCATION.
-    // TODO (5): output the story (as indicated above) here
 
     cout << "My " << adjective << " " << relative << "is convinced that if I " << verb << " " << adverb << "," << endl;
     cout << "I will be able to " << anotherVerb << " the " << noun << " in " << location << ".";
