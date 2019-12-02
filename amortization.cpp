@@ -16,7 +16,6 @@ int main() {
 
 
     // Get user input
-    // TODO (1): Write your code here.
     cin >> loanAmount;
     cin >> ratePercent;
     cin >> numMonths;
@@ -29,7 +28,6 @@ int main() {
      *           1 - (1 + i)
      */
 
-    // TODO (2): Uncomment and complete the code here:
     // double rateDecimal = ...
     double rateDecimal = ratePercent / 100;
     // double numerator = ...
@@ -48,7 +46,6 @@ int main() {
     cout << "Loan Amount: $" << loanAmount << endl;
     cout << "Monthly Interest Rate: " << ratePercent << "%" << endl;
     cout << "Number of Payments: " << numMonths << endl;
-    // TODO (3): Write your code here
     cout << "Monthly Payment: $" << monthlyPayment << endl;
     cout << "Amount Paid Back: $" << paidBack << endl;
     cout << "Interest Paid: $" << interestPaid << endl;
