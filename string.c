@@ -21,7 +21,7 @@ const char* strrchr(const char* str, int c);
 const char* strstr(const char* str1, const char* str2);
 int isalnum(int c );
 
-int main(void){}  ///Add your own unit tests here.  When uploading, you can leave it blank.
+int main(void){}  ///Add your own unit tests here.  When uploading, you can leave it blank
 
 ///Server unit testers will only tell you if it failed or not
 ///Unit test your own code and study the specifications provided in the description
