@@ -222,5 +222,4 @@ void writeDb(MonsterList *monsters, char *fileName){
     printf("%d items written to '%s' (monster array)\n", monsters->size, fileName);
     fclose(outFile);
 }
-
 // -----------------------------------------------------------------------
