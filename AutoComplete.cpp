@@ -30,7 +30,6 @@ int main()
     return 0;
 }
 
-///TODO(0)  define binarySearch-
 int binarySearch(string a[], string key, int size){
     int mid = 0;
     int low = 0;
@@ -55,7 +54,6 @@ int binarySearch(string a[], string key, int size){
 }
 
 
-///TODO(1)  define insertionSort
 void insertionSort(string a[], int size){
     int i = 0;
     int j = 0;
@@ -77,7 +75,6 @@ void insertionSort(string a[], int size){
 }
 
 
-///TODO(2)  define readDictionary
 int readDictionary(string a[], string fileName){
     int sum;
     string word;
@@ -95,7 +92,6 @@ int readDictionary(string a[], string fileName){
 - return the number of words read.  This will be used for size throughout the rest of the code.
 */
 
-///TODO(3)  define writeDictionary
 void writeDictionary(string a[], int size, string fileName){
     ofstream outFS;
     outFS.open(fileName);
@@ -110,7 +106,6 @@ void writeDictionary(string a[], int size, string fileName){
 - Write each element of a to the file.
 */
 
-///TODO(4)  define updateDictionary
 int updateDictionary(string a[], int size, string s, string fileName){
     ///binarySearch(a, s, size);
     if (binarySearch(a, s, size) == -1){
@@ -131,7 +126,6 @@ int updateDictionary(string a[], int size, string s, string fileName){
     - Write a to the file using writeDictionary
 */
 
-///TODO(5)  define outputMatches
 void outputMatches(string a[], int size, string s){
     for (int i = 0; i < size; i++){
         if (a[i].find(s) == 0){
