@@ -7,7 +7,6 @@
 #include <iomanip>
 
 using namespace std;
-
 // -----------------------------------------------------------------------
 // global constants
 const string INFILE_PREFIX = "rawgrades-";
