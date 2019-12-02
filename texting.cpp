@@ -1,4 +1,3 @@
-// TODO (1): includes / namespace declaration
 #include <iostream>
 #include <string>
 using namespace std;
@@ -22,23 +21,16 @@ const string longs[NUM_STRINGS] = {BFF_LONG, IDK_LONG, JK_LONG, TMI_LONG, TTYL_L
 
 int main()
 {
-
-   //TODO (2):  declare a string to hold the sentence
     string userInput;
-   //TODO (3):  prompt the user input "Enter text:"
     cout << "Enter Text:" << endl;
     getline(cin, userInput);
-   //TODO (4):  declare a variable to hold a search index
-
-   //TODO (6):  use a for loop to iterate through each character of the string and replace any '.' with '!'
     for (size_t i = 0; i < userInput.size(); i++){
         if (userInput.at(i) == '.'){
             ///userInput.replace(run, 1, "!");
             userInput.at(i) = '!';
         }
     }
-
-   //TODO (5):  implement a find and replace while loop for each abbreviation (5 total)
+   
    for(size_t i = 0; i < NUM_STRINGS; i++)
    {
        size_t findIndex = userInput.find(abbreviations[i]);
@@ -52,7 +44,6 @@ int main()
        ///repeat the find
    }
 
-   //TODO (6):  output the modified string
    cout << userInput << endl;
    return 0;
 }
