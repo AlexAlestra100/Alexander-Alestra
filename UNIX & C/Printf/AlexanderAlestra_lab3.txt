@@ -1,0 +1,33 @@
+Script started on Wed Sep 23 14:17:12 2020
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6045@athena lab3]> gcc lab3.c
+[cs6045@athena lab3]> a.out
+
+Your Name Here. Lab 3.
+
+Joe went to the store.
+
+My friend is 19 years old.
+
+"So many books, so little time."
+- Frank Zappa
+
+The average = 345.1
+
+The average = 345.123
+
+The average = 3.45e+02
+
+The average = 345.123450
+
+[cs6045@athena lab3]> exit
+exit
+
+Script done on Wed Sep 23 14:17:28 2020

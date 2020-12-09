@@ -1,0 +1,49 @@
+Script started on Tue Oct  6 17:01:44 2020
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6045@athena lab4]> gcc lab4.c
+[cs6045@athena lab4]> a.out
+[cs6045@athena lab4]> cat lab4out.txt
+
+Alexander Alestra.  Lab 4.
+
+Box 1
+The length is:    17
+The height is:    11
+The depth is:     10
+The girth is:     59 
+
+Box 2
+The length is:    16
+The height is:    13
+The depth is:     10
+The girth is:     62 
+
+Box 3
+The length is:    18
+The height is:     8
+The depth is:     14
+The girth is:     62 
+
+Box 4
+The length is:    15
+The height is:     5
+The depth is:     10
+The girth is:     45 
+
+Box 5
+The length is:    12
+The height is:    10
+The depth is:      7
+The girth is:     46 
+
+[cs6045@athena lab4]> exit
+exit
+
+Script done on Tue Oct  6 17:02:07 2020

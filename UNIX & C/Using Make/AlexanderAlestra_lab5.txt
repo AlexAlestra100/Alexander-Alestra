@@ -1,0 +1,31 @@
+Script started on Wed Oct 14 17:08:52 2020
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6045@athena lab5]> touch lab.h[1@5.h
+[cs6045@athena lab5]> make
+gcc -c lab5.c
+gcc -c find_two_radii.c
+gcc lab5.o find_two_radii.o -o radii -lm
+[cs6045@athena lab5]> radii
+[cs6045@athena lab5]> cat lab5.txt
+
+Alexander Alestra.  Lab 5. 
+
+   Triangle Sides      Radius-Of-Circle    
+   A     B     C       Inside   Outside    
+--------------------   ------   -------    
+ 3.70   5.00   4.20     1.18      2.55 
+ 6.80   3.00   5.90     1.12      3.41 
+ 4.00   3.30   6.10     0.91      3.31 
+ 5.60   7.30   5.60     1.68      3.69 
+
+[cs6045@athena lab5]> exit
+exit
+
+Script done on Wed Oct 14 17:09:22 2020

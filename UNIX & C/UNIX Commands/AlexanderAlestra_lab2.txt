@@ -1,0 +1,224 @@
+Script started on Thu Sep 17 16:31:18 2020
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6045@athena ~]> history -c
+[cs6045@athena ~]> cd csc60
+[cs6045@athena csc60]> mkdir lab2
+[cs6045@athena csc60]> cd lab2
+[cs6045@athena lab2]> pwd
+/gaia/class/cs604/cs6045/csc60/lab2
+[cs6045@athena lab2]> mkdir aaa
+[cs6045@athena lab2]> cd aaa
+[cs6045@athena aaa]> pwd
+/gaia/class/cs604/cs6045/csc60/lab2/aaa
+[cs6045@athena aaa]> cd..
+bash: cd..: command not found
+[cs6045@athena aaa]> cd /.  ..
+[cs6045@athena lab2]> pwd
+/gaia/class/cs604/cs6045/csc60/lab2
+[cs6045@athena lab2]> ls > file1
+[cs6045@athena lab2]> cate  file1
+aaa/
+file1
+[cs6045@athena lab2]> less file1
+[?1049h[?1h=aaa/
+file1
+[7mfile1 (END) [27m[K[K[?1l>[?1049l[cs6045@athena lab2]> file *
+aaa:   setgid directory
+file1: ASCII text
+[cs6045@athena lab2]> wc file1
+ 2  2 11 file1
+[cs6045@athena lab2]> wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      11 file1
+      2       2      11 total
+[cs6045@athena lab2]> grep lab file1
+[cs6045@athena lab2]> cp file1 file2
+[cs6045@athena lab2]> ls
+aaa/  file1  file2
+[cs6045@athena lab2]> cd aaa
+[cs6045@athena aaa]> cp ..  /file1.
+cp: missing destination file operand after `../file1.'
+Try `cp --help' for more information.
+[cs6045@athena aaa]> cp ../file1
+cp: missing destination file operand after `../file1'
+Try `cp --help' for more information.
+[cs6045@athena aaa]> cp ../file1 .
+[cs6045@athena aaa]> ls
+file1
+[cs6045@athena aaa]> mv file1 file2
+[cs6045@athena aaa]> ls
+file2
+[cs6045@athena aaa]> mv ../file1 .
+[cs6045@athena aaa]> cd ..
+[cs6045@athena lab2]> ls
+aaa/  file2
+[cs6045@athena lab2]> cd aaa
+[cs6045@athena aaa]> ls
+file1  file2
+[cs6045@athena aaa]> cmp file1 file2
+[cs6045@athena aaa]> ls > aaalist
+[cs6045@athena aaa]> cmp file1 aaalist
+file1 aaalist differ: char 4, line 1
+[cs6045@athena aaa]> diff file1 aaalist
+1c1
+< aaa/
+---
+> aaalist
+2a3
+> file2
+[cs6045@athena aaa]> rm file1
+[cs6045@athena aaa]> ls
+aaalist  file2
+[cs6045@athena aaa]> ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+cs6045   17734  0.0  0.0   6200  2700 pts/15   Ss   16:19   0:00 -bash
+cs6045   19760  0.0  0.0   4136   696 pts/15   S+   16:31   0:00 script ALexanderAlestra
+cs6045   19762  0.0  0.0   4648   332 pts/15   S+   16:31   0:00 script ALexanderAlestra
+cs6045   19763  0.0  0.0   5360  1680 pts/1    Ss   16:31   0:00 bash -i
+cs6045   20659  1.0  0.0   5072  1136 pts/1    R+   16:38   0:00 ps u
+[cs6045@athena aaa]> ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 50166 19763 19762  0  80   0 -  1340 -      pts/1    00:00:00 bash
+0 R 50166 20678 19763  1  80   0 -  1214 -      pts/1    00:00:00 ps
+[cs6045@athena aaa]> !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 50166 19763 19762  0  80   0 -  1340 -      pts/1    00:00:00 bash
+0 R 50166 20689 19763  0  80   0 -  1214 -      pts/1    00:00:00 ps
+[cs6045@athena aaa]> history
+    1  2020-09-17 16:31:28 cd csc60
+    2  2020-09-17 16:31:38 mkdir lab2
+    3  2020-09-17 16:31:42 cd lab2
+    4  2020-09-17 16:31:47 pwd
+    5  2020-09-17 16:31:59 mkdir aaa
+    6  2020-09-17 16:32:01 cd aaa
+    7  2020-09-17 16:32:05 pwd
+    8  2020-09-17 16:32:18 cd..
+    9  2020-09-17 16:32:23 cd ..
+   10  2020-09-17 16:32:28 pwd
+   11  2020-09-17 16:32:44 ls > file1
+   12  2020-09-17 16:32:50 cat file1
+   13  2020-09-17 16:33:03 less file1
+   14  2020-09-17 16:33:19 file *
+   15  2020-09-17 16:33:32 wc file1
+   16  2020-09-17 16:33:38 wc *
+   17  2020-09-17 16:33:56 grep lab file1
+   18  2020-09-17 16:34:06 cp file1 file2
+   19  2020-09-17 16:34:09 ls
+   20  2020-09-17 16:34:20 cd aaa
+   21  2020-09-17 16:34:38 cp ../file1.
+   22  2020-09-17 16:34:53 cp ../file1
+   23  2020-09-17 16:35:11 cp ../file1 .
+   24  2020-09-17 16:35:21 ls
+   25  2020-09-17 16:35:33 mv file1 file2
+   26  2020-09-17 16:35:36 ls
+   27  2020-09-17 16:35:56 mv ../file1 .
+   28  2020-09-17 16:35:58 cd ..
+   29  2020-09-17 16:36:01 ls
+   30  2020-09-17 16:36:41 cd aaa
+   31  2020-09-17 16:36:44 ls
+   32  2020-09-17 16:37:00 cmp file1 file2
+   33  2020-09-17 16:37:09 ls > aaalist
+   34  2020-09-17 16:37:27 cmp file1 aaalist
+   35  2020-09-17 16:37:48 diff file1 aaalist
+   36  2020-09-17 16:38:07 rm file1
+   37  2020-09-17 16:38:15 ls
+   38  2020-09-17 16:38:25 ps u
+   39  2020-09-17 16:38:36 ps -l
+   40  2020-09-17 16:38:47 history
+[cs6045@athena aaa]> cd ../..
+[cs6045@athena csc60]> pwd
+/gaia/class/cs604/cs6045/csc60
+[cs6045@athena csc60]> cd lab1
+[cs6045@athena lab1]> head lab1.c
+/*----------------*/
+/*Alexander Alestra*/
+/*Lab 1*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	printf("\nLab 1\n\n");
+[cs6045@athena lab1]> q
+bash: q: command not found
+[cs6045@athena lab1]> tail lab1.c
+int main(void)
+{
+	printf("\nLab 1\n\n");
+	printf("Hello World.\n");
+	printf("Hi, Alexander Alestra.\n\n");
+	printf("Failure is progress.\n-Unknown\n\n");
+
+	return EXIT_SUCCESS;
+}
+/*----------------*/
+[cs6045@athena lab1]> ls -al | less
+[?1049h[?1h=total 24
+drwx--S--- 2 cs6045 cs604 4096 Sep  9 16:54 ./
+drwx--S--- 4 cs6045 cs604 4096 Sep 17 16:31 ../
+-rw------- 1 cs6045 cs604  282 Sep  4 18:09 AlexanderAlestra_lab1.txt
+-rwx------ 1 cs6045 cs604 4758 Sep  9 16:54 a.out*
+-rw------- 1 cs6045 cs604  294 Sep  9 15:31 lab1.c
+[7m(END) [27m[K[K[?1l>[?1049l[cs6045@athena lab1]> hisy tory
+    1  2020-09-17 16:31:28 cd csc60
+    2  2020-09-17 16:31:38 mkdir lab2
+    3  2020-09-17 16:31:42 cd lab2
+    4  2020-09-17 16:31:47 pwd
+    5  2020-09-17 16:31:59 mkdir aaa
+    6  2020-09-17 16:32:01 cd aaa
+    7  2020-09-17 16:32:05 pwd
+    8  2020-09-17 16:32:18 cd..
+    9  2020-09-17 16:32:23 cd ..
+   10  2020-09-17 16:32:28 pwd
+   11  2020-09-17 16:32:44 ls > file1
+   12  2020-09-17 16:32:50 cat file1
+   13  2020-09-17 16:33:03 less file1
+   14  2020-09-17 16:33:19 file *
+   15  2020-09-17 16:33:32 wc file1
+   16  2020-09-17 16:33:38 wc *
+   17  2020-09-17 16:33:56 grep lab file1
+   18  2020-09-17 16:34:06 cp file1 file2
+   19  2020-09-17 16:34:09 ls
+   20  2020-09-17 16:34:20 cd aaa
+   21  2020-09-17 16:34:38 cp ../file1.
+   22  2020-09-17 16:34:53 cp ../file1
+   23  2020-09-17 16:35:11 cp ../file1 .
+   24  2020-09-17 16:35:21 ls
+   25  2020-09-17 16:35:33 mv file1 file2
+   26  2020-09-17 16:35:36 ls
+   27  2020-09-17 16:35:56 mv ../file1 .
+   28  2020-09-17 16:35:58 cd ..
+   29  2020-09-17 16:36:01 ls
+   30  2020-09-17 16:36:41 cd aaa
+   31  2020-09-17 16:36:44 ls
+   32  2020-09-17 16:37:00 cmp file1 file2
+   33  2020-09-17 16:37:09 ls > aaalist
+   34  2020-09-17 16:37:27 cmp file1 aaalist
+   35  2020-09-17 16:37:48 diff file1 aaalist
+   36  2020-09-17 16:38:07 rm file1
+   37  2020-09-17 16:38:15 ls
+   38  2020-09-17 16:38:25 ps u
+   39  2020-09-17 16:38:36 ps -l
+   40  2020-09-17 16:38:47 history
+   41  2020-09-17 16:39:20 cd ../..
+   42  2020-09-17 16:39:27 pwd
+   43  2020-09-17 16:39:39 cd lab1
+   44  2020-09-17 16:40:07 head lab1.c
+   45  2020-09-17 16:40:48 q
+   46  2020-09-17 16:41:03 tail lab1.c
+   47  2020-09-17 16:41:22 ls -al | less
+   48  2020-09-17 16:41:37 history
+[cs6045@athena lab1]> exit
+exit
+
+Script done on Thu Sep 17 16:41:45 2020

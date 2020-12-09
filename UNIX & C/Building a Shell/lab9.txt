@@ -1,0 +1,41 @@
+Script started on Fri Nov 27 16:45:43 2020
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6045@athena lab9]> gcc lab9.c -Wall
+lab9.c: In function 'main':
+lab9.c:130: warning: control reaches end of non-void function
+[cs6045@athena lab9]> a.oiu  ut
+csc60msh> 
+csc60msh>  
+csc60msh> pwd
+Argv 0 = pwd 
+/gaia/class/cs604/cs6045/csc60/lab9
+csc60msh> cd ..
+Argv 0 = cd 
+Argv 1 = .. 
+csc60msh> pwd
+Argv 0 = pwd 
+/gaia/class/cs604/cs6045/csc60
+csc60msh> cd lab9. 
+Argv 0 = cd 
+Argv 1 = lab9 
+csc60msh> pwd
+Argv 0 = pwd 
+/gaia/class/cs604/cs6045/csc60/lab9
+csc60msh> cd
+Argv 0 = cd 
+csc60msh> pwe d
+Argv 0 = pwd 
+/gaia/class/cs604/cs6045
+csc60msh> exit
+Argv 0 = exit 
+[cs6045@athena lab9]> exit
+exit
+
+Script done on Fri Nov 27 16:47:26 2020
