@@ -1,0 +1,16 @@
+Script started on Fri 04 Sep 2020 06:09:23 PM PDT
+[cs6045@athena:21]> gcc.[K lab1.c
+[cs6045@athena:22]> a.out
+
+Lab 1
+
+Hello World.
+Hi, Alexander Alestra.
+
+Failure is progress.
+-Unknown
+
+[cs6045@athena:23]> exit
+exit
+
+Script done on Fri 04 Sep 2020 06:09:49 PM PDT
