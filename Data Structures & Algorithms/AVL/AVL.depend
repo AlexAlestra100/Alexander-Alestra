@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1587526070 source:c:\users\kestr\desktop\cisp 430\avl\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+
+1588313706 source:c:\users\kestr\desktop\cisp hw\cisp 430\avl\main.cpp
+	<iostream>
+	<fstream>
+

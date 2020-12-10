@@ -1,0 +1,11 @@
+parentOf(james, janet).
+age(luke, 25).
+age(jenny, 28).
+
+isBiaoJie(X,Y) :-
+	isFemale(X),
+	cousins(X,Y,1),
+	age(X,A),
+	age(Y,B),
+	A > B.
+	

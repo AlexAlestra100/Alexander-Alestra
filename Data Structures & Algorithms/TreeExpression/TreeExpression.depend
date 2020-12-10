@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1586384309 source:c:\users\kestr\desktop\cisp 430\treeexpression\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	<cctype>
+	<cmath>
+

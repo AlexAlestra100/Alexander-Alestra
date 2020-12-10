@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1581897234 source:c:\users\kestr\desktop\cisp 430\infixtopostix\main.cpp
+	<iostream>
+	<fstream>
+
+1581900834 source:c:\users\kestr\desktop\cisp hw\cisp 430\infixtopostix\main.cpp
+	<iostream>
+	<fstream>
+

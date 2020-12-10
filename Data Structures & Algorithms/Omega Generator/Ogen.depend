@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1587691061 source:c:\users\kestr\desktop\cisp 430\ogen\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<vector>
+
+1588015395 source:c:\users\kestr\desktop\cisp hw\cisp 440\ogen\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdint.h>
+	<string>
+	<vector>
+

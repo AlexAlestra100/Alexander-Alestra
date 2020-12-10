@@ -1,0 +1,16 @@
+t=>sr:
+Resolution:
+t=>sr == !t+sr == !t+s*r == (!t*1)+(s*1)*r == (!t*(s+!s)+((s*(t+!t))*r
+== (!t*s)+(!t*!s)+((s*t)+(s*!t))*r == ((!t+t)*!s)+(s*(t+!t)*r == (1*!s)+(1*s)*r
+== !s+s*r == 1*r
+Contradiction:
+!(t=>sr) == !(!t+(s*r)) == t*!(s*r) == t*(!s+!r) == t*((!s*(t+!t))+!r)
+== t*((!s*t)+(!s*!t)+!r) == t*((!t*(s+!s))+!r == t*!t+!r == 0+!r
+
+(qr)=>t:
+Resolution:
+(qr)=>t == !(q*r)+t == !q+!r+t == (!q*(!r+r)+!r+t == (!q*!t)+(!q*t)+!r+(t*!q)+(t*q)
+== ((!q+q)*!t)+!r+((t*(q+!q) == (1*t)+!r+(!t*1) == !t+t+!r == 1+!r
+Contradiction:
+(qr)=>t == !(qr)=>t == !(!(q*r)+t) == q*r*!t == q*(r*1)*!t == q*(r*(t+!t))*!t
+== q*((r*t)+(r*!t))*!t == q*(t*(r+!r))*!t == q*(t*1)*!t == q*t*!t == q*0

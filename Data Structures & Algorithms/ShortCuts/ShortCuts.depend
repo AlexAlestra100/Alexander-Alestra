@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1580676074 source:c:\users\kestr\desktop\cisp 430\shortcuts\main.cpp
+	<iostream>
+	<fstream>
+

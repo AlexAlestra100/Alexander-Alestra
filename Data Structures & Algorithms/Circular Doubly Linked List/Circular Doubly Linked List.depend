@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1582085732 source:c:\users\kestr\desktop\cisp 430\circular doubly linked list\main.cpp
+	<iostream>
+	<fstream>
+

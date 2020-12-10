@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1581207275 source:c:\users\kestr\desktop\cisp 430\stacks_binary\main.cpp
+	<iostream>
+	<stack>
+

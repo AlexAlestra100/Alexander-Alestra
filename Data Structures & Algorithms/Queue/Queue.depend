@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1581235779 source:c:\users\kestr\desktop\cisp 430\queue\main.cpp
+	<iostream>
+	<fstream>
+	<queue>
+

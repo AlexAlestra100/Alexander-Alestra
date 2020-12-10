@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1588365705 source:c:\users\kestr\desktop\cisp hw\cisp 430\treearray\main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+

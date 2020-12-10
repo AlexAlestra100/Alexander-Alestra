@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1586125082 source:c:\users\kestr\desktop\cisp 430\deletetree\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+

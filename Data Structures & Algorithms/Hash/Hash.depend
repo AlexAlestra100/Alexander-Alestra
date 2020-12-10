@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1589080447 source:c:\users\kestr\desktop\cisp hw\cisp 430\hash\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+

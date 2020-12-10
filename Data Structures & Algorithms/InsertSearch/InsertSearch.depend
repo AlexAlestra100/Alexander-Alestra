@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1585518575 source:c:\users\kestr\desktop\cisp 430\insertsearch\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+
