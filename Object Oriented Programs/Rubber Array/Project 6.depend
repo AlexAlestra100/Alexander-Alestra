@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1574192474 source:c:\users\kestr\desktop\project 6\main.cpp
+	<iostream>
+	<iomanip>
+	"RubberArray.h"
+
+1574192740 c:\users\kestr\desktop\project 6\rubberarray.h
+

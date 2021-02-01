@@ -1,0 +1,18 @@
+main: main.o zoo.o raccoon.o giraffe.o greenseaturtle.o crocodilia.o mammal.o reptile.o animal.o
+    g++ -pedantic -Wall main.o zoo.o raccoon.o giraffe.o greenseaturtle.o crocodilia.o mammal.o reptile.o animal.o -o main
+main.o: main.cpp zoo.o raccoon.o giraffe.o greenseaturtle.o crocodilia.o mammal.o reptile.o animal.o
+    g++ -pedantic -Wall main.cpp -c
+zoo.o: zoo.cpp raccoon.o giraffe.o greenseaturtle.o crocodilia.o mammal.o reptile.o animal.o
+    g++ -pedantic -Wall zoo.cpp zoo.h -c
+raccoon.o: raccoon.cpp raccoon.h mammal.o animal.o
+    g++ -pedantic -Wall raccoon.cpp -c
+giraffe.o: giraffe.cpp giraffe.h mammal.o animal.o
+    g++ -pedantic -Wall giraffe.cpp -c
+greenseaturtle.o: greenseaturtle.cpp greenseaturtle.h reptile.o animal.o
+    g++ -pedantic -Wall greenseaturtle.cpp -c
+crocodilia.o: crocodilia.cpp crocodilia.h reptile.o animal.o
+    g++ -pedantic -Wall crocodilia.cpp -c
+mammal.o: mammal.cpp mammal.h animal.o
+    g++ -pedantic -Wall mammal.cpp -c
+reptile.o: reptile.cpp reptile.h animal.o
+    g++ -pedantic -Wall reptile.cpp -c

@@ -1,0 +1,6 @@
+main: VectorMain.o Vector.o
+	g++ -pedantic VectorMain.o Vector.o -o main
+VectorMain.o: VectorMain.cpp Vector.o
+	g++ -Wall -pedantic VectorMain.cpp -c
+Vector.o: Vector.cpp Vector.h
+	g++ -Wall -pedantic Vector.cpp -c
