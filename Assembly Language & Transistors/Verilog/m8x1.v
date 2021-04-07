@@ -1,8 +1,3 @@
-// Alexander Alestra
-// Mux 8 to 1
-// compile: iverilog m8x1.v
-// run: ./a.out
-
 module DecoderMod(s, o);
   input [2:0] s;
   output [0:7] o;
