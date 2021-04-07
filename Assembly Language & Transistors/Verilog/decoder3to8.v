@@ -1,8 +1,3 @@
-// Alexander Alestra
-// decoder8to3.v, 3-to-8 encoder, gate synthesis
-// compile: iverilog decoder3to8.v
-// run: ./a.out
-
 module DecoderMod(i2, i1, i0, o0, o1, o2, o3, o4, o5, o6, o7);
    input i2, i1, i0;
    output o0, o1, o2, o3, o4, o5, o6, o7;
