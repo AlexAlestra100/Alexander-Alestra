@@ -56,7 +56,7 @@ public final class List135<E> {
         return "[" + toStringHelper() + "]";
     }
     
-    // Return number of elements in the list in O(1) time
+    // Return number of elements
     public int size() {
         if (isEmpty())
             return 0;
