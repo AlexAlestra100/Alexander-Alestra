@@ -7,5 +7,5 @@
   (cond ((not (list? toks)) false)
         ((empty? toks) toks)             ; $ predicts S -> AB
         ((equal? (first toks) "a") (parseB (parseA toks))) ; a predicts S -> AB
-        ((equal? (first toks) "b") (parseA (parseB toks))) ; b predicts S -> AB
+        ((equal? (first toks) "b") (parseB toks)) ; b predicts S -> AB
         (else false)))
