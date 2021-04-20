@@ -6,6 +6,6 @@
 (define (parseA toks)
   (cond ((not (list? toks)) false)
         ((empty? toks) toks)             ; $ predicts A -> λ
-        ((equal? (first toks) "a") (parseA (match (rest toks) "a"))) ; a predicts A -> aaA
+        ((equal? (first toks) "a") (parseA (match (match toks "a") "a"))) ; a predicts A -> aaA
         ((equal? (first toks) "b") toks) ; b predicts A -> λ
         (else false)))
