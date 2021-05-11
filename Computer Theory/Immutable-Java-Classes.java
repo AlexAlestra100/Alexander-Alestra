@@ -56,7 +56,7 @@ public final class List135<E> {
         return "[" + toStringHelper() + "]";
     }
     
-    // Return number of elements
+    // Return number of elements !!!NEEDS TO BE IN A DIFFERENT FUNCTION TO BE O(N)
     public int size() {
         if (isEmpty())
             return 0;
