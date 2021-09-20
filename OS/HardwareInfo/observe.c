@@ -10,22 +10,85 @@
 
 int partB();
 int partC();
+int partD(int i, int d);
 
 int main(int argc, char *argv[])
 {
-    
-    printf("\nPart B\n");
+    char c1, c2;
+    int interval, duration;
+
+    printf("\nPart B\n------\n");
     partB();
     
-    if(argc == 2)
+    if(argc > 1)
     {
-       if(strcmp(argv[1],"-s") == 0)
-       {
-            printf("Part C\n");
+        sscanf(argv[1], "%c%c", &c1, &c2);
+        
+        if (c1 != '-')
+        {
+            fprintf(stderr, "usage: observer [-s][-l int dur]\n");
+            exit(1);
+        }
+
+        if(c2 == 's')
+        {
+            printf("Part C\n------\n");
             partC();
-       }
+        }
+        if(c2 == 'l')
+        {
+            interval = atoi(argv[2]);
+            duration = atoi(argv[3]);
+            partD(interval, duration);
+        }
     }
     
+    return 0;
+}
+
+int partD(int i, int d)
+{
+    printf("Part D\n------\n");
+
+    FILE *mem;
+    char avmem[29];
+    char inmem[29];
+    
+    mem = fopen("/proc/meminfo", "r");
+
+    if(mem)
+    {
+        fgets(inmem, 29, mem);
+        fgets(avmem, 29, mem); 
+          
+        printf("\n%s\n%s\n", inmem, avmem);
+
+        fclose(mem);
+
+    }
+    else
+    {
+        printf("Unable to open file!\n");
+    }
+
+    FILE *avg;
+    char load[50];
+
+    printf("Load Averages\nIntervals: %d seconds\nDuration: %d seconds\n\n", i, d);
+
+    int iter = 0;
+
+    while(iter < d)
+    {
+        avg = fopen("/proc/loadavg", "r");
+        fgets(load, 50, avg);
+        fclose(avg);
+
+        sleep(i);
+        printf("%s\n", load);
+        iter += i;
+    }
+
     return 0;
 }
 
