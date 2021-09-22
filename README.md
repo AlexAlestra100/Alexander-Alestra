@@ -1,1 +1,1 @@
-This is a combination of all my programs developed by me during my academic career. This should be used for job prospecting only. I will not be responsible if any of the code code is used for anything in conjunction with academic dishonesty or illegal.
+This is a combination of all my programs developed by me during my academic career. This should be used for job prospecting only. I will not be responsible if any of the code is used for anything in conjunction with academic dishonesty or illegal.
