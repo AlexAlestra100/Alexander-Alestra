@@ -51,8 +51,12 @@ int main()
    second->next = third;
    third->next = NULL;
 
+   cout << "Regular List" << endl;
+   printList(head);
+
    reverseList(head);
 
+   cout << endl << "Reverse List" << endl;
    printList(third);
 
    return 0;
