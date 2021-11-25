@@ -9,3 +9,5 @@ Template: "proj2 input_file [FCFS|RR|SRTF] [time quantum]"
 Example 1: "proj2 input_file FCFS"
 Example 2: "proj2 input_file SRTF"
 Example 1: "proj2 input_file RR 2"
+
+Note: Must have a process scheduled at 0!
