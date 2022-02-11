@@ -1,0 +1,55 @@
+SELECT p.Title AS title, p.Archived AS status, p.Project_Status AS archived
+FROM PROJECT AS p
+WHERE p.PROJECT_ID = (
+	SELECT Project_ID
+	FROM REVIEWS
+	WHERE Reviewer_Role = 'optional');
+	
+SELECT i.First_Name AS 'first name', i.Last_Name AS 'last name', i.Organization AS 'organization'
+FROM INVESTIGATOR AS i
+WHERE i.SSN = (
+	SELECT w.SSN
+	FROM WORKS_ON AS w
+	HAVING count(w.SSN)>1);
+	
+SELECT r.First_Name AS 'Reviewers First Name', r.Last_Name AS 'Reviewers Last Name', i.First_Name AS 'Investigators First Name', i.Last_Name AS 'Investigators Last Name'
+FROM REVIEWER AS r, INVESTIGATOR AS i, WORKS_ON AS w, REVIEWS AS s, PROJECT AS p
+WHERE r.SSN = s.SSN AND i.SSN = w.SSN AND w.Project_ID = p.Project_ID AND s.Project_ID = p.Project_ID AND p.Title = 'Air Quality';
+
+SELECT p.Project_ID AS 'project ID' , p.Title AS 'title', i.SSN, i.Last_Name AS 'last name'
+FROM PROJECT AS p, INVESTIGATOR AS i, WORKS_ON AS w
+WHERE p.Project_ID = w.Project_ID AND i.SSN = w.SSN
+ORDER BY p.Project_ID;
+
+SELECT p.Project_ID AS 'project ID', p.Title AS title, i.SSN, i.First_Name AS 'first name'
+FROM PROJECT AS p, WORKS_ON AS w, INVESTIGATOR AS i
+WHERE w.Inv_Role = 'PI' AND p.Project_ID = w.Project_ID AND w.SSN = i.SSN;
+
+SELECT p.Project_ID AS 'project ID', p.Title AS 'title', p.Project_Status AS 'status', p.Archived
+FROM PROJECT AS p
+WHERE p.Project_ID = (
+	SELECT w.Project_ID
+	FROM WORKS_ON AS w
+	WHERE w.Inv_Role = 'CO-PI');
+
+SELECT p.Project_ID AS 'project ID', p.Title AS title
+FROM PROJECT AS p, WORKS_ON AS w, INVESTIGATOR AS i
+WHERE w.Inv_Role = 'PI' AND i.First_Name = 'John' AND i.Last_Name = 'Smith' AND w.SSN = i.SSN AND w.Project_ID = p.Project_ID;
+
+SELECT r.SSN, count(s.SSN) AS 'reviewed projects'
+FROM REVIEWER AS r, REVIEWS AS s
+WHERE r.SSN = r.SSN
+HAVING count(s.SSN) > 2;
+
+SELECT i.SSN, i.Last_Name AS 'last name', count(i.SSN) AS 'number of projects served as "PI"'
+FROM INVESTIGATOR AS i, WORKS_ON AS w
+WHERE w.SSN = i.SSN AND w.Inv_Role = 'PI'
+HAVING count(w.SSN);
+
+SELECT i.SSN
+FROM INVESTIGATOR AS i
+WHERE i.Last_Name = 'Smith'
+UNION
+SELECT r.SSN
+FROM REVIEWER AS r
+WHERE r.Last_Name = 'Smith';
