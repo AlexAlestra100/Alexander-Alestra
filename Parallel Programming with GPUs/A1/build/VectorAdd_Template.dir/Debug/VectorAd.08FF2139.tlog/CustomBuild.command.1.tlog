@@ -1,0 +1,26 @@
+^U:\A1\SOURCE\VECTORADD\TEMPLATE.CU
+setlocal
+cd U:\A1\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd
+if %errorlevel% neq 0 goto :cmEnd
+U:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory U:/A1/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools/MSVC/14.27.29110/bin/Hostx64/x64" -D build_configuration:STRING=Debug -D generated_file:STRING=U:/A1/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/Debug/VectorAdd_Template_generated_template.cu.obj -D generated_cubin_file:STRING=U:/A1/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/Debug/VectorAdd_Template_generated_template.cu.obj.cubin.txt -P U:/A1/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/VectorAdd_Template_generated_template.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^U:\A1\SOURCE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SU:/A1/source -BU:/A1/build --check-stamp-file U:/A1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

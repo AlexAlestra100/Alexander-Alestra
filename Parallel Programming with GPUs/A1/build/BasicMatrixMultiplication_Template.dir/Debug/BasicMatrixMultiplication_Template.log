@@ -1,0 +1,6 @@
+﻿  Building NVCC (Device) object CMakeFiles/BasicMatrixMultiplication_Template.dir/BasicMatrixMultiplication/Debug/BasicMatrixMultiplication_Template_generated_template.cu.obj
+  template.cu
+  template.cu
+  Building Custom Rule U:/A1/source/CMakeLists.txt
+     Creating library U:/A1/build/Debug/BasicMatrixMultiplication_Template.lib and object U:/A1/build/Debug/BasicMatrixMultiplication_Template.exp
+  BasicMatrixMultiplication_Template.vcxproj -> U:\A1\build\Debug\BasicMatrixMultiplication_Template.exe
