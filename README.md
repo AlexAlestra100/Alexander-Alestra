@@ -1,1 +1,1 @@
-This is a combination of all my programs developed by me during my academic career. This should be used for job prospecting only. I will not be responsible if any of the code is used for anything in conjunction with academic dishonesty or illegal.
+This collection of programs is a compilation of my personal projects developed during my academic journey. It is intended for job prospecting purposes only. Please note that I cannot be held responsible for any misuse or illegal utilization of the code.
